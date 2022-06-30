@@ -1,2 +1,2 @@
-# lovelace-curtain-card
+# Curtain Card
 Curtain card for Home Assistant Lovelace UI

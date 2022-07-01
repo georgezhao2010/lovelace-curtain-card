@@ -8,7 +8,7 @@ class CurtainCard extends HTMLElement {
         if(!this.card){
             //Init the card
             const card = document.createElement("ha-card");
-            if(this._config.name){
+            if(this._config.title){
                 card.header = this._config.title
             }
             this.last_state = "none";

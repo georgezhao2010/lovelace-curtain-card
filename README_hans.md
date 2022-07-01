@@ -62,7 +62,7 @@ direction: right
 
 ```
 type: custom:curtain-card
-entity: cover.0x00158d0004012897_motor
+entity: cover.xxxxxxxx_motor
 title: 客厅窗帘
 curtainColor: rgb(26,160,220,0.5)
 direction: left

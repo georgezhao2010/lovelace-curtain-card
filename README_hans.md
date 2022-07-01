@@ -31,7 +31,7 @@ Home Assistant Lovelace UI中使用的窗帘卡片。
 | type | String | Yes | none | custom:curtain-card |
 | title | String | No | none | 卡片上显示的标题, 不设则不显示 |
 | curtainColor | String | No | none | 窗帘颜色, 以4通道RGB表示 |
-| direction | String | No | 'left' | 窗帘拉开方向 |
+| direction | String | No | 'right' | 窗帘拉开方向 |
 | sceneImage | String | No | none | 窗外场景的图片URL |
 | showStatus | Boolean | No | true | 是否在底部显示开闭百分比和打开关闭状态信息 |
 | invertPercentage | Boolean | No | false | 百分比翻转 |
@@ -58,7 +58,7 @@ type: custom:curtain-card
 entity: cover.XXXXXXXX_motor
 title: 卧室窗帘
 curtainColor: rgb(200,60,80,0.3)
-direction: right
+direction: left
 ```
 
 ![Example1](curtain-1.gif)
@@ -70,7 +70,6 @@ type: custom:curtain-card
 entity: cover.xxxxxxxx_motor
 title: 客厅窗帘
 curtainColor: rgb(26,160,220,0.5)
-direction: left
 sceneImage: /local/images/2.gif
 ```
 
@@ -86,13 +85,12 @@ cards:
   - type: custom:curtain-card
     entity: cover.xxxxxxxx_motor
     curtainColor: rgb(26,160,220,0.5)
-    direction: left
     size: 150
     showStatus: false
   - type: custom:curtain-card
     entity: cover.xxxxxxxx_motor
     curtainColor: rgb(200,60,80,0.3)
-    direction: right
+    direction: left
     size: 150
     showStatus: false
 ```

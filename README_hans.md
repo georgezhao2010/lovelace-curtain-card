@@ -43,7 +43,7 @@ curtainColor用4通道RGB颜色表示，分别是红绿蓝及Alpha通道，Alpha
 
 ## sceneImage 配置项
 
-sceneImage图片最好是一个800*680比例的图片，推荐使用400*340分辨率的，可以是PNG/JPEG等，甚至是GIF动图。
+sceneImage图片最好是一个800x680比例的图片，推荐使用400x340分辨率的，可以是PNG/JPEG等，甚至是GIF动图。
 
 # 示例
 ## 示例1

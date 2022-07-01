@@ -5,7 +5,7 @@
 
 [English](https://github.com/georgezhao2010/lovelace-curtain-card/blob/master/README.md) | 简体中文
 
-Home Assistant Lovelace UI中使用的窗帘卡片。
+Home Assistant Lovelace UI中使用的窗帘卡片，可以控制你的cover实体的电机。
 
 适用于水平开启的窗帘，可以自定义窗帘打开方向，自定义窗外的景色图片。使用手/或者鼠标拖拽窗帘即可打开或者关闭窗帘，也可以拖拽到指定位置实现打开或者关闭指定的百分比。
 

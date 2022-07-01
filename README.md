@@ -3,7 +3,7 @@
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
 [![Stable](https://img.shields.io/github/v/release/georgezhao2010/lovelace-curtain-card)](https://github.com/georgezhao2010/lovelace-curtain-card/releases/latest)
 
-English | [简体中文]((https://github.com/georgezhao2010/lovelace-toggle-control-button/blob/main/README_hans.md))
+English | [简体中文](https://github.com/georgezhao2010/lovelace-toggle-control-button/blob/main/README_hans.md)
 
 Curtain card for Home Assistant Lovelace UI.
 

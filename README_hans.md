@@ -3,7 +3,7 @@
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
 [![Stable](https://img.shields.io/github/v/release/georgezhao2010/lovelace-curtain-card)](https://github.com/georgezhao2010/lovelace-curtain-card/releases/latest)
 
-[English](https://github.com/georgezhao2010/lovelace-toggle-control-button/blob/main/README.md) | 简体中文
+[English](https://github.com/georgezhao2010/lovelace-curtain-card/blob/master/README.md) | 简体中文
 
 Home Assistant Lovelace UI中使用的窗帘卡片。
 
@@ -15,7 +15,7 @@ Home Assistant Lovelace UI中使用的窗帘卡片。
 
 如果你不使用HACS，也可以按照以下方法进行手动安装。
 
-将dist/curtain-card.js下载并复制到你的HomeAssistant的/config/www/目录中。
+将`dist/curtain-card.js`下载并复制到你的HomeAssistant的`/config/www/`目录中。
 
 将如下配置加入"resources"配置项中，将路径改为你文件所在的具体位置。
 

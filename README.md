@@ -44,7 +44,7 @@ curtainColor is represented by 4 channel RGB colors, red, green, blue and Alpha 
 
 ## sceneImage option
 
-SceneImage should be an 800*680 scale image, 400*340 resolution is recommended, PNG/JPEG, or even GIF GIF. 
+SceneImage should be an 800x680 scale image, 400x340 resolution is recommended, PNG/JPEG, or even GIF GIF. 
 
 # Examples
 ## Example1

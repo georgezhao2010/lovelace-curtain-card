@@ -5,7 +5,7 @@
 
 English | [简体中文](https://github.com/georgezhao2010/lovelace-curtain-card/blob/master/README_hans.md)
 
-Curtain card for Home Assistant Lovelace UI.
+Curtain card for Home Assistant Lovelace UI, to control your cover entity.
 
 It is suitable for curtain opening horizontally. You can customize the opening direction of curtain and the scenery image outside the window. The curtain can be opened or closed by dragging it by hand or mouse, to a specified position by a specified percentage. 
 

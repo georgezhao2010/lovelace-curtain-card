@@ -53,6 +53,8 @@ sceneImage图片最好是一个800x680比例的图片，推荐使用400x340分�
 # 示例
 ## 示例1
 
+向左拉开的窗帘
+
 ```
 type: custom:curtain-card
 entity: cover.XXXXXXXX_motor
@@ -64,6 +66,8 @@ direction: left
 ![Example1](curtain-1.gif)
 
 ## 示例2
+
+自定义窗外景色图片的向右拉开的窗帘
 
 ```
 type: custom:curtain-card

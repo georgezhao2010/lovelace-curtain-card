@@ -9,7 +9,7 @@ class CurtainCard extends HTMLElement {
             //Init the card
             const card = document.createElement("ha-card");
             if(this._config.name){
-                card.header = this._config.name
+                card.header = this._config.title
             }
             this.last_state = "none";
             const container = document.createElement("div");
@@ -129,10 +129,6 @@ class CurtainCard extends HTMLElement {
                         this.label.innerHTML = this.currentPosition + "%";
                     }else{
                         this.label.innerHTML = "Unknown";
-                    }
-
-                    if(this.card && !this._config.name){
-                        card.header = friendlyName;
                     }
                 }else{
                     this.label.innerHTML = curtainObj.state;

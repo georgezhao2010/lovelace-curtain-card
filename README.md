@@ -32,7 +32,7 @@ Add the following configuration to the resources items and change the path to th
 | type | String | Yes | none | custom:curtain-card |
 | title | String | No | none | The title displayed on the card only appeared when it was set |
 | curtainColor | String | No | none | Curtain color, expressed in 4-channel RGB |
-| direction | String | No | 'left' | |Direction of curtain opening |
+| direction | String | No | 'right' | |Direction of curtain opening |
 | sceneImage | String | No | none | The image URL of the scene outside the window |
 | showStatus | Boolean | No | true | Whether to display percentage and opening/closing status information at the bottom of card|
 | invertPercentage | Boolean | No | false | invert the percentage |
@@ -60,7 +60,7 @@ type: custom:curtain-card
 entity: cover.XXXXXXXX_motor
 title: 卧室窗帘
 curtainColor: rgb(200,60,80,0.3)
-direction: right
+direction: left
 ```
 
 ![Example1](curtain-1.gif)
@@ -89,13 +89,13 @@ cards:
   - type: custom:curtain-card
     entity: cover.xxxxxxxx_motor
     curtainColor: rgb(26,160,220,0.5)
-    direction: left
+    direction: right
     size: 150
     showStatus: false
   - type: custom:curtain-card
     entity: cover.xxxxxxxx_motor
     curtainColor: rgb(200,60,80,0.3)
-    direction: right
+    direction: left
     size: 150
     showStatus: false
 ```

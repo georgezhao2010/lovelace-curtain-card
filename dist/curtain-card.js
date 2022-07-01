@@ -1,4 +1,4 @@
-console.info("%c CURTAIN-CARD %c 0.1.0","color: white; background: green; font-weight: 700;","color: green; background: white; font-weight: 700;");
+console.info("%c CURTAIN-CARD %c 0.1.1","color: white; background: green; font-weight: 700;","color: green; background: white; font-weight: 700;");
 
 class CurtainCard extends HTMLElement {
     set hass(hass){

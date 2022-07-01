@@ -35,6 +35,7 @@ Home Assistant Lovelace UI中使用的窗帘卡片。
 | sceneImage | String | No | none | 窗外场景的图片URL |
 | showStatus | Boolean | No | true | 是否在底部显示开闭百分比和打开关闭状态信息 |
 | invertPercentage | Boolean | No | false | 百分比翻转 |
+| size | Number | No | 260 | 窗帘的显示尺寸 |
 
 
 ## curtainColor 配置项
@@ -44,6 +45,10 @@ curtainColor用4通道RGB颜色表示，分别是红绿蓝及Alpha通道，Alpha
 ## sceneImage 配置项
 
 sceneImage图片最好是一个800x680比例的图片，推荐使用400x340分辨率的，可以是PNG/JPEG等，甚至是GIF动图。
+
+## size 配置项
+
+取值范围是100到800, 可以根据你的UI风格设置一个合适的值
 
 # 示例
 ## 示例1
@@ -70,3 +75,26 @@ sceneImage: /local/images/2.gif
 ```
 
 ![Example2](curtain-2.gif)
+
+## 示例3
+
+设置size值以便卡片可以水平堆叠显示
+
+```
+type: horizontal-stack
+cards:
+  - type: custom:curtain-card
+    entity: cover.xxxxxxxx_motor
+    curtainColor: rgb(26,160,220,0.5)
+    direction: left
+    size: 150
+    showStatus: false
+  - type: custom:curtain-card
+    entity: cover.xxxxxxxx_motor
+    curtainColor: rgb(200,60,80,0.3)
+    direction: right
+    size: 150
+    showStatus: false
+```
+
+![Example3](h-stack.png)

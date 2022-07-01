@@ -3,6 +3,8 @@
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
 [![Stable](https://img.shields.io/github/v/release/georgezhao2010/lovelace-curtain-card)](https://github.com/georgezhao2010/lovelace-curtain-card/releases/latest)
 
+[English](https://github.com/georgezhao2010/lovelace-toggle-control-button/blob/main/README.md) | 简体中文
+
 Home Assistant Lovelace UI中使用的窗帘卡片。
 
 适用于水平开启的窗帘，可以自定义窗帘打开方向，自定义窗外的景色图片。使用手/或者鼠标拖拽窗帘即可打开或者关闭窗帘，也可以拖拽到指定位置实现打开或者关闭指定的百分比。

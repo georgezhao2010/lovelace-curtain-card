@@ -1,4 +1,5 @@
 {
   "name": "Curtain Card",
-  "render_readme": true
+  "render_readme": true,
+  "filename": "curtain-card.js"
 }

@@ -36,6 +36,7 @@ Add the following configuration to the resources items and change the path to th
 | sceneImage | String | No | none | The image URL of the scene outside the window |
 | showStatus | Boolean | No | true | Whether to display percentage and opening/closing status information at the bottom of card|
 | invertPercentage | Boolean | No | false | invert the percentage |
+| size | Number | No | 260 | The curtain size displayed in card |
 
 
 ## curtainColor option
@@ -46,8 +47,13 @@ curtainColor is represented by 4 channel RGB colors, red, green, blue and Alpha 
 
 SceneImage should be an 800x680 scale image, 400x340 resolution is recommended, PNG/JPEG, or even GIF GIF. 
 
+## size
+The value range is from 100 to 800, You can set it to an appropriate value depending on your UI style.
+
 # Examples
 ## Example1
+
+A right-opening curtain
 
 ```
 type: custom:curtain-card
@@ -61,14 +67,40 @@ direction: right
 
 ## Example2
 
+A left-opening curtain with a customized scene image.
+
 ```
 type: custom:curtain-card
 entity: cover.xxxxxxxx_motor
 title: 客厅窗帘
 curtainColor: rgb(26,160,220,0.5)
-direction: left
 sceneImage: /local/images/2.gif
 ```
 
 ![Example2](curtain-2.gif)
+
+## Example3
+
+Set the size value so that the cards shown in stacks.
+
+```
+type: horizontal-stack
+cards:
+  - type: custom:curtain-card
+    entity: cover.xxxxxxxx_motor
+    curtainColor: rgb(26,160,220,0.5)
+    direction: left
+    size: 150
+    showStatus: false
+  - type: custom:curtain-card
+    entity: cover.xxxxxxxx_motor
+    curtainColor: rgb(200,60,80,0.3)
+    direction: right
+    size: 150
+    showStatus: false
+```
+
+![Example3](h-stack.png)
+
+
 

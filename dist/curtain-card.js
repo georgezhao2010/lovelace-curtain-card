@@ -3,13 +3,12 @@ console.info("%c CURTAIN-CARD %c 0.1.3","color: white; background: green; font-w
 class CurtainCard extends HTMLElement {
     set hass(hass){
         const _this = this;
-        const entity = this._config.entity;
         this._hass = hass;
         if(!this.card){
             //Init the card
             const card = document.createElement("ha-card");
             if(this._config.title){
-                card.header = this._config.title
+                card.header = this._config.title;
             }
             if(!(this._config.size.constructor != "Number")){
                 this._config.size = 260;
@@ -21,7 +20,7 @@ class CurtainCard extends HTMLElement {
             }
             this.last_state = "none";
             const container = document.createElement("div");
-            container.className = "curtain-card-container"
+            container.className = "curtain-card-container";
             const windows = document.createElement("div");
             windows.className = "curtain-card-windows";
             const scene = document.createElement("div");
@@ -57,9 +56,9 @@ class CurtainCard extends HTMLElement {
             `;
 
             if(this._config.sceneImage){
-                sceneImage.src = this._config.sceneImage
+                sceneImage.src = this._config.sceneImage;
             }
-            mask.style.background = this._config.curtainColor
+            mask.style.background = this._config.curtainColor;
             windows.style.width = this._config.size + "px";
             windows.style.height = this._config.size + "px";
             scene.appendChild(sceneImage);
@@ -76,7 +75,7 @@ class CurtainCard extends HTMLElement {
             this.appendChild(card);
             this.appendChild(style);
             this.windows = windows;
-            this.card = card
+            this.card = card;
             this.curtain = curtain;
             this.mask = mask;
             this.slider = slider;
@@ -128,13 +127,12 @@ class CurtainCard extends HTMLElement {
                     if(curtainObj.invert_percentage){
                         invertPercentage = curtainObj.invert_percentage;
                     }else{
-                        invertPercentage = this._config.invertPercentage
+                        invertPercentage = this._config.invertPercentage;
                     }
                     const state = hass.states[this._config.entity];
-                    const friendlyName = curtainObj.name ? curtainObj.name : state ? state.attributes.friendly_name : "unknown";
                     this.currentPosition = state ? state.attributes.current_position : "unknown";
                     if(this.currentPosition != "unknown"){
-                        if(this._config.invertPercentage){
+                        if(invertPercentage){
                             this.setCurtainPos(100 - this.currentPosition);
                         } else {
                             this.setCurtainPos(this.currentPosition);
@@ -154,7 +152,6 @@ class CurtainCard extends HTMLElement {
         if(!config.entity){
           throw new Error("You need to define a entity");
         }
-        this._config = config;
         this._config = {
             curtainColor: "background:RGB(39,177,220,0.4);",
             invertPercentage: false,
@@ -187,12 +184,8 @@ class CurtainCard extends HTMLElement {
         let width = this.windows.clientWidth * 0.7;
         let moves = offset * 100 / width;
         if(moves > 1 || moves < -1){
-            let new_pos = this.currentPosition;
-            if(this._config.direction.toLowerCase() == "right"){
-                new_pos = this.currentPosition + moves;
-            }else{
-                new_pos = this.currentPosition - moves;
-            }
+            let new_pos = this._config.direction.toLowerCase() == "right"?
+                this.currentPosition + moves: this.currentPosition - moves;
             new_pos = Math.round(new_pos);
             if(new_pos < 0){
                 new_pos = 0;

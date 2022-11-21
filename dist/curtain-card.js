@@ -88,7 +88,9 @@ class CurtainCard extends HTMLElement {
                     event.preventDefault();
                 }
                 _this.isUpdating = true;
-                _this.StartPos = event.pageX;
+                if (typeof event.pageX !== 'undefined') {
+                  _this.StartPos = event.pageX;
+                }
                 document.addEventListener('mousemove', mouseMove);
                 document.addEventListener('touchmove', mouseMove);
                 document.addEventListener('pointermove', mouseMove);

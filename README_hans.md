@@ -32,7 +32,7 @@ Home Assistant Lovelace UI中使用的窗帘卡片，可以控制你的cover实�
 | type | String | Yes | none | custom:curtain-card |
 | title | String | No | none | 卡片上显示的标题, 不设则不显示 |
 | curtainColor | String | No | none | 窗帘颜色, 以4通道RGB表示 |
-| direction | String | No | 'right' | 窗帘拉开方向 |
+| direction | String | No | 'right' | 窗帘拉开方向 right\|left\|center |
 | sceneImage | String | No | none | 窗外场景的图片URL |
 | showStatus | Boolean | No | true | 是否在底部显示开闭百分比和打开关闭状态信息 |
 | invertPercentage | Boolean | No | false | 百分比翻转 |

@@ -27,13 +27,13 @@ Add the following configuration to the resources items and change the path to th
 
 # Options
 
-| Name | Type | Required | Default| Description
+| Name | Type | Required | Default| Description|
 | --- | --- | --- | --- | --- |
 | entity | String | Yes | none | entity_id |
 | type | String | Yes | none | custom:curtain-card |
 | title | String | No | none | The title displayed on the card only appeared when it was set |
 | curtainColor | String | No | none | Curtain color, expressed in 4-channel RGB |
-| direction | String | No | 'right' | |Direction of curtain opening |
+| direction | String | No | 'right' | right\|left\|center |
 | sceneImage | String | No | none | The image URL of the scene outside the window |
 | showStatus | Boolean | No | true | Whether to display percentage and opening/closing status information at the bottom of card|
 | invertPercentage | Boolean | No | false | invert the percentage |

@@ -33,7 +33,7 @@ Add the following configuration to the resources items and change the path to th
 | type | String | Yes | none | custom:curtain-card |
 | title | String | No | none | The title displayed on the card only appeared when it was set |
 | curtainColor | String | No | none | Curtain color, expressed in 4-channel RGB |
-| direction | String | No | 'right' | right\|left\|center |
+| direction | String | No | 'right' | right \| left \| center |
 | sceneImage | String | No | none | The image URL of the scene outside the window |
 | showStatus | Boolean | No | true | Whether to display percentage and opening/closing status information at the bottom of card|
 | invertPercentage | Boolean | No | false | invert the percentage |
